@@ -117,12 +117,3 @@ class LinkedList:
                     self.tail = node.next                    
                 return
             node = node.next
-            
-    def make_list(self):
-        list = []
-        node = self.head
-        while node is not None:
-            list.append(node.value)
-            node = node.next
-        return list
-
