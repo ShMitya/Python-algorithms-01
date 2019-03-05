@@ -57,7 +57,7 @@ class LinkedList:
                         self.tail = None
                     elif self.head.next.next == None:
                         self.head = node.next
-                        self.tail = None
+                        self.tail = node
                     else:
                         self.head = node.next
                     node = node.next
@@ -67,7 +67,7 @@ class LinkedList:
                     self.tail = None
                 elif self.head.next.next == None:
                     self.head = node.next
-                    self.tail = None
+                    self.tail = node
                 else:
                     self.head = node.next
                     
